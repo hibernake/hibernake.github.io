@@ -1,7 +1,28 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta charset='utf-8'/>
+<script>
+function hide(){
+var table = document.getElementById("MYTABLE");
+table.rows[0].cells[0].style.display = 'none'
+table.rows[1].cells[0].style.display = 'none'
+}
+</script>
+</head>
 <body>
 <h1> hello </h1>
 <p> by Hibernake </p>
+<table id='MYTABLE'>
+<TR>
+<TD> 1 </TD>
+<TD> 2 </TD>
+</TR>
+<TR>
+<TD> 3 </TD>
+<TD> 4 </TD>
+</TR>
+</table>
+<input type="button" value='隐藏' onclick="hide()" id="bn">
 </body>
 </html>
