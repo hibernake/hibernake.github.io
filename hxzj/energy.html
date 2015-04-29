@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'/>
+<script src='jquery-1.11.2.min.js'></script>
+<script>
+    function cal() {
+        var s = 0
+        var attack = 1
+        var defend = 0
+        var self = 0
+        var group = 0
+        var aid = 0
+        var order = $("input:radio[name='order']:checked").val()
+        var position = $("input:radio[name='position']:checked").val()
+        if (position=='front') {
+            defend = 2
+        }
+        
+        self = parseInt($("input:radio[name='self']:checked").val())
+        
+        s = attack+defend+self
+        
+        if ($("#row").prop('checked') || $("#col").prop('checked')) {
+            group = 1
+        }
+        
+        if ($("#aid").prop('checked')) {
+            aid = 1
+        }
+        
+        s = attack + defend + self + group + aid
+        
+        function geti(){
+            var text=''
+            for(var i=1; i<11; i++){
+                n = (i-1)*s+self
+                if(order=='defence'){
+                    n += 2
+                }
+                text += i + ',' + n + '\n'
+                if(n>=10){
+                    //alert(text)
+                    return i
+                }
+            }
+        }
+        
+        var text =''
+        text += '<p>' + '第' + geti() + '回合使用技能 </p>'
+        text += '单回合共回能：' + s + '<BR>'
+        text += '攻击回能：1' + '<BR>'
+        text += '被攻击回能：' + defend + '<BR>'
+        text += '技能回能：' + (self+group+aid)
+        $("#result").html(text)
+    }
+	
+	function load(){
+	    $('label').click(cal)
+        cal()
+	}
+    
+    window.onload = load
+</script>
+
+<style>
+    INPUT, label { font-family:"宋体"; font-size:small; }
+    p { font-family:"宋体"; font-size:small; }
+    .font { font-family:"宋体"; font-size:small; line-height:150% }
+    .box { border:1px solid #000; padding:10px  }
+    .m {margin-left:5%; margin-right:5%;}
+</style>
+</head>
+<body>
+<h1> 幻想战姬回能研究 </h1>
+<p> by Hibernake </p>
+
+<p> 回能速查器 </p>
+
+<div class='font m'>
+<p>
+<label><input type='radio' name='order' value='offence' checked='checked'> 攻方 </input></label>
+<label><input type='radio' name='order' value='defence'> 守方 </input></label>
+<BR>
+
+<label><input type='radio' name='position' value='front' checked='checked'> 前排 </input></label>
+<label><input type='radio' name='position' value='back'> 后排 </input></label>
+<BR>
+
+<label><input type='radio' name='self' value='0' checked='checked'> 无自回能 </input></label>
+<label><input type='radio' name='self' value='1'> 自回能1 </input></label>
+<label><input type='radio' name='self' value='2'> 自回能2 </input></label>
+<BR>
+
+<label><input type='checkbox' id='row'> 横扫回能 </input></label>
+<label><input type='checkbox' id='col'> 贯通回能 </input></label>
+<label><input type='checkbox' id='aid'> 连携回能 </input></label>
+
+</p>
+</div>
+
+<div id='result' class='box m font'>
+    待显示
+</div>
+
+
+<div class='m font'>
+<p> 游戏中存在四种回能：</p>
+
+<p>
+1. 被动自回能
+<BR>
+发生在行动之前
+</p>
+
+<p>
+2. 攻击或被伤害回能<BR>
+发生在攻击或者被伤害后。被伤害包括被普通攻击或者被技能伤害。<BR>
+不产生直接伤害的技能，如毒，不产生回能效果。
+</p>
+
+<p>
+3. 横扫或贯通回能<BR>
+在攻方与守方均行动结束之后，进行结算。<BR>
+有多个横扫及贯通回能效果时，不叠加。<BR>
+同时有横扫及贯通回能效果时，不叠加。
+</p>
+
+<p>
+4. 连携回能<BR>
+在攻方与守方均行动结束之后，进行结算。<BR>
+有多个连携回能效果时，不叠加。<BR>
+连携回能可以与3. 横扫或贯通回能相叠加。
+</p>
+</div>
+
+</body>
+</html>

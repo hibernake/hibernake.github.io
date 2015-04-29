@@ -1,0 +1,1001 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+<HEAD>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.0  (Win32)">
+	<META NAME="AUTHOR" CONTENT="祥羽">
+	<META NAME="CREATED" CONTENT="20150426;16085400">
+	<META NAME="CHANGED" CONTENT="20150428;8015800">
+	<META NAME="KSOProductBuildVer" CONTENT="2052-9.1.0.4994">
+	
+	<script>
+	function set_col(col, value){
+		var table = document.getElementById('data');
+		for(var row in table.rows){
+			if(table.rows[row].cells && table.rows[row].cells[col]){
+				table.rows[row].cells[col].style.display=value
+			}
+		}
+	}
+	function hide_col(col){
+		set_col(col, 'none')
+	}
+	function show_col(col){
+		set_col(col, '')
+	}
+	function on_check(check, col){
+		if(check.checked){
+			show_col(col)
+		}
+		else{
+			hide_col(col)
+		}
+	}
+	</script>
+	<STYLE>
+		<!-- 
+		BODY,DIV,TABLE,THEAD,TBODY,TFOOT,TR,TH,TD,P { font-family:"宋体"; font-size:small }
+		 -->
+	</STYLE>
+	
+</HEAD>
+
+<BODY TEXT="#000000">
+<input type='checkbox' checked='checked' onclick='on_check(this, 2)'>攻击</input>
+<input type='checkbox' checked='checked' onclick='on_check(this, 3)'>生命</input>
+<input type='checkbox' checked='checked' onclick='on_check(this, 4)'>防御</input>
+<input type='checkbox' checked='checked' onclick='on_check(this, 6)'>前排主动</input>
+<input type='checkbox' checked='checked' onclick='on_check(this, 7)'>前排被动</input>
+<input type='checkbox' checked='checked' onclick='on_check(this, 8)'>后排主动</input>
+<input type='checkbox' checked='checked' onclick='on_check(this, 9)'>后排被动</input>
+<TABLE id='data' FRAME=VOID CELLSPACING=0 COLS=11 RULES=NONE BORDER=0>
+	<COLGROUP><COL WIDTH=107><COL WIDTH=20><COL WIDTH=37><COL WIDTH=52><COL WIDTH=36><COL WIDTH=45><COL WIDTH=189><COL WIDTH=145><COL WIDTH=181><COL WIDTH=153><COL WIDTH=196></COLGROUP>
+	<TBODY>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" WIDTH=107 HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B>战姬名称</B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" WIDTH=20 ALIGN=CENTER VALIGN=MIDDLE><B>初</B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" WIDTH=37 ALIGN=CENTER VALIGN=MIDDLE><B>攻击</B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" WIDTH=52 ALIGN=CENTER VALIGN=MIDDLE><B>生命</B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" WIDTH=36 ALIGN=CENTER VALIGN=MIDDLE><B>防御</B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" WIDTH=45 ALIGN=CENTER VALIGN=MIDDLE><B>备注</B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" WIDTH=189 ALIGN=CENTER VALIGN=MIDDLE><B>前排主动</B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" WIDTH=145 ALIGN=CENTER VALIGN=MIDDLE><B>前排被动</B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" WIDTH=181 ALIGN=CENTER VALIGN=MIDDLE><B>后排主动</B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" WIDTH=153 ALIGN=CENTER VALIGN=MIDDLE><B>后排被动</B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" WIDTH=196 ALIGN=CENTER VALIGN=MIDDLE><B>回能连携</B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">帕凡缇</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1873" SDNUM="2052;">1873</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="18082" SDNUM="2052;">18082</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1406" SDNUM="2052;">1406</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤365%追20</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通攻3%防2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤280%.30%睡</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>攻3%回血1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">钟傀姬</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1714" SDNUM="2052;">1714</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="29531" SDNUM="2052;">29531</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1136" SDNUM="2052;">1136</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤230%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通防10%降攻2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤300%追50</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>横扫回血1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">孙悟空</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1463" SDNUM="2052;">1463</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="37596" SDNUM="2052;">37596</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1682" SDNUM="2052;">1682</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤335%追15</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通防3%回血1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫降攻50%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>全体攻2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">苏妲己</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1109" SDNUM="2052;">1109</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="53058" SDNUM="2052;">53058</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="2114" SDNUM="2052;">2114</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体100%沉默2</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通防10%降攻2%+3</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤350%追77</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻3%回血1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>花嫁苏妲己</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">花嫁苏妲己</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1561" SDNUM="2052;">1561</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="38103" SDNUM="2052;">38103</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1733" SDNUM="2052;">1733</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤282%.30%降攻10%+5</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通防10%降攻2%+3</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤325%追25</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">贯通回能1</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>苏妲己</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">星愿四不像</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1098" SDNUM="2052;">1098</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="39934" SDNUM="2052;">39934</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="2273" SDNUM="2052;">2273</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>60神+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">横扫回血</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻5%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">贯通攻30%+15</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻10%.毒1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>四不像</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">糖心天邪鬼</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="972" SDNUM="2052;">972</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="39992" SDNUM="2052;">39992</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="2974" SDNUM="2052;">2974</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">全体回血</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻6%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">贯通驱散.回血6%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>横扫攻8%降防2%+3</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>天邪鬼.水手默儿.情恋娜吒</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">极欲仙君</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1702" SDNUM="2052;">1702</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="30220" SDNUM="2052;">30220</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1205" SDNUM="2052;">1205</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65神+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤325%20%睡</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻6%防2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤345%追15</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>横扫防2%攻2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">娜吒</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1900" SDNUM="2052;">1900</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="30498" SDNUM="2052;">30498</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1129" SDNUM="2052;">1129</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>64姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤260%追35</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻5%防3%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫100%晕</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通防5%攻2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>情恋娜吒</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">百花仙子</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1038" SDNUM="2052;">1038</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="39126" SDNUM="2052;">39126</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="3453" SDNUM="2052;">3453</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">全体回血</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">自身回能2.毒3%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">全体驱散.回血5%+20</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻10%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">穷奇</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1981" SDNUM="2052;">1981</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="16482" SDNUM="2052;">16482</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1072" SDNUM="2052;">1072</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体毒5%+5</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻6%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤300%追10</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身回血2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">卡莉</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="2129" SDNUM="2052;">2129</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="17806" SDNUM="2052;">17806</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1110" SDNUM="2052;">1110</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤290%追25</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>横扫攻2%防3%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤270%.100%沉默1</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>横扫回血1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>狂欢卡莉</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">苏莉亚</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1863" SDNUM="2052;">1863</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="17811" SDNUM="2052;">17811</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1288" SDNUM="2052;">1288</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65神+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">单体伤580</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>横扫攻2%防2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">横扫回血</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通攻2%防5%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">鼓贝</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1184" SDNUM="2052;">1184</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="45890" SDNUM="2052;">45890</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="2488" SDNUM="2052;">2488</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65神+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">贯通回血15%+30</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>全体攻1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤345%追65</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻10%毒1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">万魔小湿婆</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1774" SDNUM="2052;">1774</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="32912" SDNUM="2052;">32912</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1500" SDNUM="2052;">1500</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤435%追20</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通攻3%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤365%.30%晕</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">自身回能2.降攻2%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>小湿婆、燃灯玉藻前</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">天邪鬼</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1710" SDNUM="2052;">1710</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="38035" SDNUM="2052;">38035</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1763" SDNUM="2052;">1763</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤230%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">自身回能1.攻1%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体100%睡</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身防12%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>糖心天邪鬼</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">白素贞</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1567" SDNUM="2052;">1567</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="33736" SDNUM="2052;">33736</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="2700" SDNUM="2052;">2700</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤120%.毒5%+10</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">自身回能2.降攻2%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤420%追15</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身防10%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">小青</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1228" SDNUM="2052;">1228</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="57317" SDNUM="2052;">57317</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1994" SDNUM="2052;">1994</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤440%追40.25%石化</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">自身回能2</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">单体伤335.50%毒10%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻10%毒1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">情人太上姥姥</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1049" SDNUM="2052;">1049</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="39186" SDNUM="2052;">39186</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="3483" SDNUM="2052;">3483</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">单体回血</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通防3%回血1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤500%追120.50%晕</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻10%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>太上姥姥</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">产土小神</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1067" SDNUM="2052;">1067</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="43235" SDNUM="2052;">43235</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="3324" SDNUM="2052;">3324</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">贯通100%驱散.回血6%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通防3%回血1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">贯通回血</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻3%回血1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>心愿产土神</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">清凉天照御姬</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1446" SDNUM="2052;">1446</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="34310" SDNUM="2052;">34310</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="2594" SDNUM="2052;">2594</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>64姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">横扫100%驱散</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通攻2%防5%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤300%追45</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通防3%回血1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>天照御姬</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">歌姬瓜</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1488" SDNUM="2052;">1488</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="14547" SDNUM="2052;">14547</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1014" SDNUM="2052;">1014</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>60灵</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤420%.100%石化</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>横扫防35%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤490%追200.100%睡</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">自身回能1</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>瓜子姬</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">偶像白虎</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1269" SDNUM="2052;">1269</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="30460" SDNUM="2052;">30460</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="2290" SDNUM="2052;">2290</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65神</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤470%.100%晕1</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">自身回能1</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通100%沉默</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">横扫回能1</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>白虎妹妹</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" COLSPAN=11 HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#333333">注：&ldquo;65姬+&rdquo;中&ldquo;+&rdquo;为带装备的属性，回血未标明数值为按攻击实时回血，标注数值为持续回血                 ++++浩哥飞扬8++++ 整理</FONT></TD>
+			</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">艳日太上姥姥</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE> </TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="609" SDNUM="2052;">609</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="13495" SDNUM="2052;">13495</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="502" SDNUM="2052;">502</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>50圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤265</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻6%防2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤460%.70%晕</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>全体防2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>太上姥姥</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">22娘</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="2149" SDNUM="2052;">2149</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="23224" SDNUM="2052;">23224</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1482" SDNUM="2052;">1482</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">单体伤550%追100</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">自身回能1</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫降攻50%.降防50%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻5%降防5%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">33娘</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1090" SDNUM="2052;">1090</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="53313" SDNUM="2052;">53313</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="2074" SDNUM="2052;">2074</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">全体回血10%防70%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身防10%降攻5%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">单体100%晕</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">自身回能2</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">天照御姬</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1041" SDNUM="2052;">1041</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="22524" SDNUM="2052;">22524</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1538" SDNUM="2052;">1538</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">横扫驱散</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻6%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤320%追250</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>全体防2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>祈愿、天照、艳日天照</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">须佐</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1029" SDNUM="2052;">1029</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="14838" SDNUM="2052;">14838</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="505" SDNUM="2052;">505</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>60灵</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体毒8%+25</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通攻3%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤315%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通防12%降攻2%+3</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">心愿产土神</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1098" SDNUM="2052;">1098</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="28078" SDNUM="2052;">28078</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1016" SDNUM="2052;">1016</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤580%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">自身回能2</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">贯通回血6%防20%+5</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">贯通回能1</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>产土小神</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">杜尔嘉</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="608" SDNUM="2052;">608</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="9345" SDNUM="2052;">9345</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="262" SDNUM="2052;">262</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>45帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤480%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>横扫回血1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体降攻10%+5</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身防12%.毒1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">太上姥姥</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="880" SDNUM="2052;">880</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="30746" SDNUM="2052;">30746</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1649" SDNUM="2052;">1649</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">横扫回血15%+30.50%驱散</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻5%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">单体毒15%.30%沉默</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>全体攻1%防2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>清凉.艳日.情人太上姥姥</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">四不像</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="402" SDNUM="2052;">402</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="12662" SDNUM="2052;">12662</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="946" SDNUM="2052;">946</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>50圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">贯通攻30%+15.80%驱散</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身防10%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">单体回血</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻10%毒1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>星愿四不像</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">月读</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="462" SDNUM="2052;">462</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="15274" SDNUM="2052;">15274</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1134" SDNUM="2052;">1134</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>55仙</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤25%追50</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身回能2.降攻2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通毒8%+25.20%石化</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻10%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">应龙</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1063" SDNUM="2052;">1063</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="23326" SDNUM="2052;">23326</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="836" SDNUM="2052;">836</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65神+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤360%追25</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>全体攻2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤380%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身防12%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">出云</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="941" SDNUM="2052;">941</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="10818" SDNUM="2052;">10818</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="664" SDNUM="2052;">664</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>55神+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤330%.30%毒2%+30</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>全体攻2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤350追50</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>横扫攻2%防5%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>花嫁出云</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">小湿婆</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1546" SDNUM="2052;">1546</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="13288" SDNUM="2052;">13288</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="622" SDNUM="2052;">622</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤320%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻5%防3%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤400%.50%降攻3%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻3%回血1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>万魔.清凉.艳日.纯情扶她</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">纯情小湿婆</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="746" SDNUM="2052;">746</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="40609" SDNUM="2052;">40609</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1319" SDNUM="2052;">1319</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤485%追45.100%晕</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通攻3%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤250%追50</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通防10%降攻2%+3</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>小湿婆</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">道歉娘</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="952" SDNUM="2052;">952</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="14269" SDNUM="2052;">14269</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="416" SDNUM="2052;">416</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>54灵</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通100%沉默</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通回血1%+15</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">贯通回血</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身防御10%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">玄武</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="743" SDNUM="2052;">743</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="37102" SDNUM="2052;">37102</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1251" SDNUM="2052;">1251</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65神+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤500%追120</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻6%防2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤350%.50%毒8%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>横扫攻2%防3%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>庆典玄武</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">迦叶仙尊</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1060" SDNUM="2052;">1060</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="22682" SDNUM="2052;">22682</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1583" SDNUM="2052;">1583</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体毒5%+12</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身回血1%+15</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">横扫攻35%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">贯通回能1</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>礼愿迦叶</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">饕餮</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="861" SDNUM="2052;">861</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="18792" SDNUM="2052;">18792</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="719" SDNUM="2052;">719</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>58灵+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">全体100%驱散</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通攻3%防2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤325%追45</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身防12%毒1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">赵公萌</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>相</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1063" SDNUM="2052;">1063</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="27445" SDNUM="2052;">27445</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="975" SDNUM="2052;">975</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤550%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻5%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体降防20%.100%沉默</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">自身回能1.防2%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>诛圣赵公萌</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">吉祥天</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="753" SDNUM="2052;">753</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="24505" SDNUM="2052;">24505</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1369" SDNUM="2052;">1369</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>58神+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">全体回血15%+30</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>横扫攻2%防2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">单体回血20%+20.防30%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>横扫攻8%降防2%+3</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">华阳</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1144" SDNUM="2052;">1144</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="27551" SDNUM="2052;">27551</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="916" SDNUM="2052;">916</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤380%追30.50%晕</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通防3%回血1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤220%.10%降攻10%+3</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">横扫回能1降攻2%+3</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">甜蜜苏里亚</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="904" SDNUM="2052;">904</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="26364" SDNUM="2052;">26364</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1553" SDNUM="2052;">1553</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65神+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体沉默</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身回血1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">全体回血</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻8%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">辉夜姬</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="549" SDNUM="2052;">549</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="26196" SDNUM="2052;">26196</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="967" SDNUM="2052;">967</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>58灵+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">贯通回血.攻6%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻8%降防2%+3</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">全体回血30%+10</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻10%降防2%+3</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">秋月墨麟</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="445" SDNUM="2052;">445</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="16752" SDNUM="2052;">16752</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1272" SDNUM="2052;">1272</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>51灵</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤350%.50%毒8%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通防3%回血1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">横扫回血.防8%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻6%防2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>墨麟</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">黑嫦娥</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1351" SDNUM="2052;">1351</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="10695" SDNUM="2052;">10695</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="552" SDNUM="2052;">552</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>60神+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤290%.50%石化</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">自身回能2毒3%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤420%.30%沉默</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>横扫攻2%防3%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>魅嫦娥</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">乙姬</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="996" SDNUM="2052;">996</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="25530" SDNUM="2052;">25530</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="805" SDNUM="2052;">805</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤450%.100%睡</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>全体攻2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">横扫攻25%+10防20%+10</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻10%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">苏摩仙子</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="916" SDNUM="2052;">916</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="9896" SDNUM="2052;">9896</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="665" SDNUM="2052;">665</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>55仙</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">横扫攻25%+10防20%+10</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">贯通回能1</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">贯通回血8%攻20%+5</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>横扫攻2%防3%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">花嫁稻姬</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="572" SDNUM="2052;">572</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="11870" SDNUM="2052;">11870</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="805" SDNUM="2052;">805</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>50帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤500%追加300</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻10%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫毒8%+25</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">自身回能2.毒3%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>稻姬</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">阿嗜尼</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1082" SDNUM="2052;">1082</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="7956" SDNUM="2052;">7956</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="487" SDNUM="2052;">487</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>57灵</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤500%追75</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通攻2%防5%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤190%追20</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身回血2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">火迦姬</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="924" SDNUM="2052;">924</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="10714" SDNUM="2052;">10714</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="728" SDNUM="2052;">728</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>60灵</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">贯通防25%+15.50%驱散</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻8%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤320%追300</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通防5%攻2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">城隍</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="832" SDNUM="2052;">832</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="31476" SDNUM="2052;">31476</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1699" SDNUM="2052;">1699</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">横扫防30%+20</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">自身回能1.防2%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤450%.100%沉默1</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">自身回能2.毒3%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>传情威铃</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">白虎妹妹</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="854" SDNUM="2052;">854</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="6748" SDNUM="2052;">6748</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="317" SDNUM="2052;">317</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>50仙</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤193%.15%睡</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身防12%毒1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤400%追150.100%睡</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻3%回血1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">燃灯玉藻前</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="862" SDNUM="2052;">862</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="30327" SDNUM="2052;">30327</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1580" SDNUM="2052;">1580</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">横扫回血5%+20.70%驱散</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通攻3%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤550%.50%石化</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>横扫回血1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>玉藻.万魔小湿婆</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">传情威铃</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1154" SDNUM="2052;">1154</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="13499" SDNUM="2052;">13499</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="801" SDNUM="2052;">801</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>62神+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤280%.30%睡</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻6%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤500%追30.20%晕</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通防10%降攻2%+3</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>城隍</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">狂欢卡莉</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1400" SDNUM="2052;">1400</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="21462" SDNUM="2052;">21462</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="667" SDNUM="2052;">667</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤400%追350</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身防10%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤220%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻8%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>卡莉</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">艳日玉藻</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1173" SDNUM="2052;">1173</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="15616" SDNUM="2052;">15616</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="501" SDNUM="2052;">501</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>60灵+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤390%.100%沉默</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通防3%回血1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤320%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">能扫回能1.降攻2%+3</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>玉藻</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">清凉玉藻</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1140" SDNUM="2052;">1140</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="27876" SDNUM="2052;">27876</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="903" SDNUM="2052;">903</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通回血</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻5%防3%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤300%追30</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">能扫回能1.降攻2%+3</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>玉藻</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">清凉小湿婆</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="932" SDNUM="2052;">932</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="20146" SDNUM="2052;">20146</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1293" SDNUM="2052;">1293</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>63神+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤460%追225.25%晕</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通攻3%防2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤197%.50%降攻10%+5</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>横扫回血1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>小湿婆</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">艳日小湿婆</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1053" SDNUM="2052;">1053</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="10732" SDNUM="2052;">10732</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="664" SDNUM="2052;">664</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>55神</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤400%.50%睡</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通攻3%防2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤270%.100%沉默1</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">自身回能2.毒3%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>小湿婆</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#0000FF">朱雀</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="782" SDNUM="2052;">782</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="6044" SDNUM="2052;">6044</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="325" SDNUM="2052;">325</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>50圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">横扫伤480%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通攻2%防5%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤315%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻8降防2%+3</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">大黑天</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1473" SDNUM="2052;">1473</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="19644" SDNUM="2052;">19644</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="710" SDNUM="2052;">710</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">横扫攻35%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通防12%降攻2%+3</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤540%追245</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻6%防2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">庆典玄武</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="548" SDNUM="2052;">548</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="20220" SDNUM="2052;">20220</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1561" SDNUM="2052;">1561</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>60灵+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">贯通回血</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻10%毒1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">全体防55%+5</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">自身回能1.防2%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>玄武.魅嫦娥</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">甜心申公喵</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="362" SDNUM="2052;">362</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="13335" SDNUM="2052;">13335</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="987" SDNUM="2052;">987</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>50圣</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通伤490%追80.30%毒8%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>横扫攻2%防3%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">贯通100%驱散.回血6%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>全体防2%攻1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>申公喵</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">碧沙门天</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="917" SDNUM="2052;">917</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="19584" SDNUM="2052;">19584</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1391" SDNUM="2052;">1391</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>63神+</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤385%追350</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身回血2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体降防20%.100沉默</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>横扫攻2%防3%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>无</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">祈愿天照</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="793" SDNUM="2052;">793</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="28648" SDNUM="2052;">28648</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="1627" SDNUM="2052;">1627</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65姬</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">全体防70%+5</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF00FF">贯通回能1</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">贯通回血</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>贯通防12%.降攻2%+3</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>天照御姬</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#FF0000">礼愿迦叶</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="930" SDNUM="2052;">930</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="23262" SDNUM="2052;">23262</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="845" SDNUM="2052;">845</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>65神</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">全体伤465%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身回血1%攻1%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#008000">贯通回血6%防20%+5</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>横扫攻2%防2%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>迦叶仙尊</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B><FONT COLOR="#008000">弥勒</FONT></B></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>帝</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="439" SDNUM="2052;">439</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="23048" SDNUM="2052;">23048</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE SDVAL="835" SDNUM="2052;">835</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>46灵</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">贯通毒10%</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻8%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><FONT COLOR="#FF0000">单体毒15%.30%沉默</FONT></TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>自身攻10%</TD>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE>旱神姬</TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=20 ALIGN=CENTER VALIGN=MIDDLE><B>战姬名称</B></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><B>初始</B></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><B>攻击</B></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><B>生命</B></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><B>防御</B></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><B>备注1</B></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><B>前排主动</B></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><B>前排被动</B></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><B>后排主动</B></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><B>后排被动</B></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN=CENTER VALIGN=MIDDLE><B>回能连携</B></TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<!-- ************************************************************************** -->
+</BODY>
+
+</HTML>
