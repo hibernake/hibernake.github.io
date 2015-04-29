@@ -11,6 +11,30 @@
 	<META NAME="CHANGED" CONTENT="20150428;8015800">
 	<META NAME="KSOProductBuildVer" CONTENT="2052-9.1.0.4994">
 	
+	<script>
+	function set_col(col, value){
+		var table = document.getElementById('data');
+		for(var row in table.rows){
+			if(table.rows[row].cells && table.rows[row].cells[col]){
+				table.rows[row].cells[col].style.display=value
+			}
+		}
+	}
+	function hide_col(col){
+		set_col(col, 'none')
+	}
+	function show_col(col){
+		set_col(col, '')
+	}
+	function on_check(check, col){
+		if(check.checked){
+			show_col(col)
+		}
+		else{
+			hide_col(col)
+		}
+	}
+	</script>
 	<STYLE>
 		<!-- 
 		BODY,DIV,TABLE,THEAD,TBODY,TFOOT,TR,TH,TD,P { font-family:"宋体"; font-size:small }
@@ -20,7 +44,14 @@
 </HEAD>
 
 <BODY TEXT="#000000">
-<TABLE FRAME=VOID CELLSPACING=0 COLS=11 RULES=NONE BORDER=0>
+<input type='checkbox' checked='checked' onclick='on_check(this, 2)'>攻击</input>
+<input type='checkbox' checked='checked' onclick='on_check(this, 3)'>生命</input>
+<input type='checkbox' checked='checked' onclick='on_check(this, 4)'>防御</input>
+<input type='checkbox' checked='checked' onclick='on_check(this, 6)'>前排主动</input>
+<input type='checkbox' checked='checked' onclick='on_check(this, 7)'>前排被动</input>
+<input type='checkbox' checked='checked' onclick='on_check(this, 8)'>后排主动</input>
+<input type='checkbox' checked='checked' onclick='on_check(this, 9)'>后排被动</input>
+<TABLE id='data' FRAME=VOID CELLSPACING=0 COLS=11 RULES=NONE BORDER=0>
 	<COLGROUP><COL WIDTH=107><COL WIDTH=20><COL WIDTH=37><COL WIDTH=52><COL WIDTH=36><COL WIDTH=45><COL WIDTH=189><COL WIDTH=145><COL WIDTH=181><COL WIDTH=153><COL WIDTH=196></COLGROUP>
 	<TBODY>
 		<TR>
