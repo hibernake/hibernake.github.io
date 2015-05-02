@@ -1,0 +1,18 @@
+INPUT { font-family:"宋体"; font-size:small; }
+p { font-family:"宋体"; font-size:small; }
+ul { list-style:none; margin:0px; padding: 0px; float: left} 
+li { padding: 5px; }
+
+.font { font-family:"宋体"; font-size:small; line-height:150% }
+.box { border:1px solid #000; padding:5px  }
+.m {margin-left:5%; margin-right:5%;}
+.title { border:1px solid #000; padding:10px; text-align: center}
+.char { border:1px solid #000; padding:5px; margin: 0px; text-align: center; line-height: 150%}
+
+.charin {
+	border: 1px solid #000;
+}
+.charselect {
+	border: 1px	solid #090; 
+	color: #009; 
+}
