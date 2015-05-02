@@ -34,9 +34,9 @@
         function geti(){
             var text=''
             for(var i=1; i<=12; i++){
-                n = (i-1)*s+self
+                n = (i-1)*s+self;
                 if(order=='defence'){
-                    n += 2
+                    n += defend;
                 }
                 text += i + ',' + n + '\n'
                 if(n>=10){
