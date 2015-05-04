@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"></meta>
+	<script src="jquery-1.11.2.min.js"></script>
+<script>
+
+var data = [
+	['名称', '星级', '类型', '职业', '攻击', '防御', '生命', '暴击', '出处', '专属'],
+	['水晶戒指', '3', '武器', '弓', '2', '', '', '1', '4H灵玉冒险', ''],
+	['巫祭发饰', '3', '防具', '盾', '', '3', '8', '', '8H灵玉冒险', '天宇舞姬'],
+	['紧箍咒', '3', '防具', '剑', '2', '3', '5', '', '8H灵玉冒险', '孙悟空'],
+	['太极', '3', '武器', '盾', '6', '', '', '', '8H灵玉冒险', '太上姥姥'],
+	['贪婪之刃', '3', '武器', '剑', '7', '', '', '', '16H灵玉冒险', '饕餮'],
+	['出云意志', '3', '防具', '弓', '', '3', '7', '', '16H灵玉冒险', '出云'],
+	['玉宫兔布偶', '3', '武器', '弓', '6', '2', '', '', '16H灵玉冒险', '嫦娥'],
+	['智者剑', '4', '武器', '剑', '7', '', '', '2', '4H判币冒险', '不动明姬'],
+	['洪泽鸣枪', '4', '武器', '弓', '8', '', '', '2', '8H判币冒险', '应龙'],
+	['祈之御币', '4', '武器', '盾', '8', '', '2', '', '8H判币冒险', '须世理'], 
+	
+	['仁义之气息', '2', '武器', '盾', '3', '', '', '3', 'W1', '青麟'], 
+	['青麟环', '3', '防具', '盾', '', '3', '7', '', 'W1H', '青麟'],     
+];
+
+function show(id, data){
+	var table = document.createElement('table');
+	var table_head = document.createElement('div');
+	
+	$('#'+id).empty();
+	$('#'+id).append(table_head);
+	$('#'+id).append(table); 
+	
+	for(var i in data){
+		var tr = document.createElement('tr');
+		table.appendChild(tr);
+		
+		for(var j in data[i]){
+			var td = document.createElement('td');
+			td.innerText = '' + data[i][j];
+			tr.appendChild(td);
+		}
+	}
+	
+	function CheckClick(check, col){
+		function show_col(value){
+			for(var row in table.rows){
+				if(table.rows[row].cells && table.rows[row].cells[col]){
+					table.rows[row].cells[col].style.display=value;
+				}
+			}
+		}
+		this.func = function(){
+			if(check.checked){
+				show_col('');
+			}
+			else{
+				show_col('none');
+			}
+		};
+	}
+	
+	for(var i in data[0]){
+		var check = document.createElement('input');
+		check.setAttribute('type', 'checkbox');
+		check.setAttribute('checked', 'check');
+		var click_func = new CheckClick(check, i); 
+		check.onclick = click_func.func;
+		
+		var text = document.createTextNode(data[0][i]);
+		table_head.appendChild(check);
+		table_head.appendChild(text);
+	}
+}
+
+window.onload = function(){
+	show('data', data);
+};
+</script>
+</head>
+
+<body>
+<div id = 'data'></div>
+</body>
+
+</html>

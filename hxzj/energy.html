@@ -11,37 +11,45 @@
         var self = 0
         var group = 0
         var aid = 0
-        var order = $("input:radio[name='order']:checked").val()
-        var position = $("input:radio[name='position']:checked").val()
+        var order = $("input:radio[name='order']:checked").val();
+        var position = $("input:radio[name='position']:checked").val();
         if (position=='front') {
-            defend = 2
+            defend = 2;
         }
         
         self = parseInt($("input:radio[name='self']:checked").val())
         
-        s = attack+defend+self
+        s = attack+defend+self;
         
         if ($("#row").prop('checked') || $("#col").prop('checked')) {
-            group = 1
+            group = 1;
         }
         
-        if ($("#aid").prop('checked')) {
-            aid = 1
+        var aid_val = $("input:radio[name='aid']:checked").val();
+        
+        if (aid_val=='aid0') {
+            aid = 0;
+        }
+        else if(aid_val=='aid1'){
+            aid = 1;
+        }
+        else if(aid_val=='aid2'){
+            aid = 2;
         }
         
         s = attack + defend + self + group + aid
         
         function geti(){
-            var text=''
+            var text='';
             for(var i=1; i<=12; i++){
-                n = (i-1)*s+self;
+                var n = (i-1)*s+self+group+aid;
                 if(order=='defence'){
                     n += defend;
                 }
-                text += i + ',' + n + '\n'
+                text += i + ',' + n + '\n';
                 if(n>=10){
                     //alert(text)
-                    return i
+                    return i;
                 }
             }
         }
@@ -64,9 +72,9 @@
 </script>
 
 <style>
-    INPUT, label { font-family:"宋体"; font-size:small; }
-    p { font-family:"宋体"; font-size:small; }
-    .font { font-family:"宋体"; font-size:small; line-height:150% }
+    INPUT, label { font-family:"宋体"; }
+    p { font-family:"宋体"; }
+    .font { font-family:"宋体"; line-height:150% }
     .box { border:1px solid #000; padding:10px  }
     .m {margin-left:5%; margin-right:5%;}
 </style>
@@ -94,7 +102,11 @@
 
 <label><input type='checkbox' id='row'> 横扫回能 </input></label>
 <label><input type='checkbox' id='col'> 贯通回能 </input></label>
-<label><input type='checkbox' id='aid'> 连携回能 </input></label>
+<BR>
+
+<label><input type='radio' name='aid' value='aid0' checked='checked'> 无连携回能 </input></label>
+<label><input type='radio' name='aid' value='aid1'> 连携回能1 </input></label>
+<label><input type='radio' name='aid' value='aid2'> 连携回能2 </input></label>
 
 </p>
 </div>

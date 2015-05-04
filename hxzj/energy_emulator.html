@@ -3,69 +3,142 @@
 <head>
 <meta charset='utf-8'/>
 <script src='jquery-1.11.2.min.js'></script>
+<script src="chardata.js"></script>
 <script>
-    function new_char_data(name, kind, property, skill) {
-        var char_data = new Object();
-        char_data.get_name = function(){
-            return name;
+
+    function new_hero(parent, name, pos){
+        var hero = new Object();
+        hero.parent = parent;
+        var view = parent;
+        
+        hero.set = function (name) {
+            var char = get_char_by_name(name);
+            hero.name = char.get_name();
+            hero.kind = char.get_kind();
+            hero.hp = char.get_hp();
+            hero.att = char.get_att();
+            hero.def = char.get_def();
+            hero.en = 0;
+            hero.skill = char.get_skill(pos);
+            
+            //view.update();
         };
-        char_data.get_kind = function(){
-            return kind;
-        };
-        char_data.get_hp = function(){
-            return property[0];
-        };
-        char_data.get_att = function(){
-            return property[1];
-        };
-        char_data.get_def = function(){
-            return property[2];
-        };
-        return char_data;
+
+        hero.set(name);
+        
+        return hero;
     }
     
-    var CHARS = [
-        new_char_data('纯情小湿婆', '盾', [40609, 746, 1319], null),
-        new_char_data('苏妲己', '盾', [53058, 1109, 2114], null),
-        new_char_data('小青', '盾', [57317, 1228, 1994], null),
-        new_char_data('百花', '盾', [39126, 1038, 3453], null),
-        new_char_data('鼓贝', '盾', [45890, 1184, 2488], null),
-        new_char_data('糖心天邪鬼', '盾', [39992, 972, 2974], null),
-        new_char_data('33娘', '盾', [53313, 1090, 2074], null), 
-        
-        new_char_data('帕凡提', '弓', [18082, 1874, 1406], null),
-        new_char_data('极裕仙君', '弓', [30220, 1702, 1205], null),
-        new_char_data('穷奇', '弓', [16482, 1981, 1072], null),
-        new_char_data('卡莉', '弓', [17806, 2129, 1110], null),
-        new_char_data('苏莉亚', '弓', [17811, 1863, 1288], null),
-        new_char_data('万魔小湿婆', '弓', [32912, 1774, 1500], null),
-        new_char_data('歌姬瓜', '弓', [14547, 1488, 1014], null), 
-        
-        new_char_data('应龙', '弓', [23326, 1063, 836], null), 
-        new_char_data('小湿婆', '弓', [13288, 1546, 622], null), 
-        
-        new_char_data('孙悟空', '剑', [37596, 1463, 1682], null),
-        new_char_data('花嫁苏妲己', '剑', [38103, 1561, 1733], null),
-        new_char_data('娜吒', '剑', [30498, 1900, 1129], null),
-        new_char_data('天邪鬼', '剑', [38035, 1710, 1763], null),
-        new_char_data('偶像白虎', '剑', [30460, 1269, 2290], null), 
-        
-        new_char_data('迦叶仙尊', '剑', [22682, 1060, 1583], null), 
-        new_char_data('赵公萌', '剑', [27445, 1063, 975], null), 
-        new_char_data('华阳', '剑', [27551, 1144, 916], null), 
-        new_char_data('狂欢卡莉', '剑', [21462, 1400, 667], null),    
-    ];
-    
-    function get_char_by_name(name){
-        for(var i in CHARS){
-            var char = CHARS[i];
-            if(char.get_name()==name){
-                return char;
+    function get_damage_ratio(att_hero, def_hero){
+        var def = def_hero.def;
+        function estimate(def1, r1, def2, r2){
+            if(def1-100<def && def<def1+100){
+                return r1;
             }
+            else if(def2-100<def && def<def2+100){
+                return r2;
+            }
+            else{
+                var k = (r2-r1)/(def2-def1);
+                var x = def-def1;
+                return k*x;
+            }
+        }
+        var k = att_hero.kind+def_hero.kind;
+        var ratio = 0;
+        if(k=='剑盾' || k=='盾弓' || k=='弓剑'){
+            ratio = estimate(1110, 2.872, 3400, 2.872);
+        } 
+        else if(k=='剑剑' || k=='盾盾' || k=='弓弓'){
+            ratio = estimate(1682, 2.237, 3400, 2.171);
+        }
+        else if(k=='剑弓' || k=='弓盾' || k=='盾剑'){
+            estimate(1110, 1.710, 1500, 1.675);
         }
     }
     
+    var active_hero = null;
+    function set_active_hero(name) {
+        if(active_hero !== null){
+            active_hero.set(name);
+            active_hero.parent.update();
+        }
+    }
+    
+    
     var selected_name = null;
+    
+    function create_view() {
+        var view = new Object();
+        var td = document.createElement('td');
+        view.td = td;
+        var hero = new_hero(view, '极裕仙君', 1);
+        view.hero = hero;
+        
+        td.onclick = function(){
+            if(active_hero != hero){
+                if(active_hero != null){
+                    active_hero.parent.td.className = '';
+                }
+                td.className = 'charselect';
+                active_hero = hero;
+            }
+            else{
+                td.className = '';
+                active_hero = null;
+            }
+        };
+        
+        
+        td.onmouseenter = function(){
+            if(active_hero != hero){
+                td.className = 'charin';
+            }
+        };
+        
+        td.onmouseout = function(){
+            if(active_hero != hero){
+                td.className = '';
+            }
+        }
+        
+        view.set_text = function(text){
+            td.innerHTML = text;
+        };
+        
+        view.update = function(){
+            var text = hero.name + '/' + hero.kind;
+            text += '<BR>';
+            text += hero.hp + '/' + hero.en;
+            view.set_text(text);
+        };
+        
+        view.update();
+        
+        return view;
+    }
+    
+    function initial_field(){
+        var field = $('#field');
+        var row1 = document.createElement('tr');
+        var row2 = document.createElement('tr');
+        var view = [];
+        for(var i=1; i<=8; i++){
+            view[i] = create_view();
+        }
+        row1.appendChild(view[7].td);
+        row1.appendChild(view[5].td);
+        row1.appendChild(view[1].td);
+        row1.appendChild(view[3].td);
+        
+        row2.appendChild(view[8].td);
+        row2.appendChild(view[6].td);
+        row2.appendChild(view[2].td);
+        row2.appendChild(view[4].td);
+        
+        field.append(row1);
+        field.append(row2);
+    }
     
     function create_chars(){
         $('#shield_kind').click(function(){
@@ -124,6 +197,8 @@
                 show_item('血量:' + char.get_hp());
                 show_item('攻击:' + char.get_att());
                 show_item('防御:' + char.get_def());
+                
+                set_active_hero(char_name);
             };
             c.className = 'charout';
             return c;
@@ -146,6 +221,7 @@
 	
 	function load(){
         create_chars();
+        initial_field();
 	}
     
     window.onload = load;
@@ -161,7 +237,7 @@
 <p> 回能速查器 </p>
 
 
-<table>
+<table id='field'>
     <tr>
         <td class='title' colspan='2'>
             守方
@@ -170,38 +246,10 @@
             攻方
         </td>
     </tr>
-    <tr>
-        <td>
-            战姬1
-        </td>
-        <td>
-            战姬2
-        </td>
-        <td>
-            战姬3
-        </td>
-        <td>
-            战姬4
-        </td>
-    </tr>
-    <tr>
-        <td>
-            战姬5
-        </td>
-        <td>
-            战姬6
-        </td>
-        <td>
-            战姬7
-        </td>
-        <td>
-            战姬8
-        </td>
-    </tr>
 </table>
 
 
-<div style='overflow:hidden'>
+<div style='overflow:hidden;'>
     <ul style="list-style:none; margin:6px; padding: 0px;">
         <li class='box' id='shield_kind'>盾</label>
         <li class='box' id='sword_kind'>剑</label>
