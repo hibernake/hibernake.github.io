@@ -18,9 +18,36 @@ var data = [
 	['洪泽鸣枪', '4', '武器', '弓', '8', '', '', '2', '8H判币冒险', '应龙'],
 	['祈之御币', '4', '武器', '盾', '8', '', '2', '', '8H判币冒险', '须世理'], 
 	
+	['定海神针', '3', '武器', '剑', '2', '', '', '5', '御守商店', '孙悟空'],
+	['封神罩', '2', '防具', '剑', '', '6', '', '', '御守商店', '太公望'],
+	['混天绫', '3', '防具', '剑', '', '5', '5', '', '御守商店', '娜吒'],
+	['白虎预言', '3', '防具', '盾', '4', '', '', '3', '御守商店', '白虎'],
+	['忠君四像之仁', '2', '防具', '盾', '', '4', '3', '', '御守商店/灵玉冒险', '四不像'],
+	['象神福德牌', '3', '防具', '盾', '2', '', '7', '', '御守商店', '迦妮莎'],
+	
 	['仁义之气息', '2', '武器', '盾', '3', '', '', '3', 'W1', '青麟'], 
-	['青麟环', '3', '防具', '盾', '', '3', '7', '', 'W1H', '青麟'],     
+	['青麟环', '3', '防具', '盾', '', '3', '7', '', 'W1H', '青麟'],
+	['秘裘颈环', '3', '防具', '弓', '3', '', '7', '', 'W2H/御守商店', '穷奇'], 
+	['赤色领带', '2', '防具', '剑', '', '', '6', '', 'W3', '刑天剑姬'], 
+	['刑戚黑刀', '3', '武器', '剑', '5', '', '', '3', 'W3H', '刑天剑姬'],
+	['不锈钢叉', '2', '武器', '剑', '3', '', '', '2', 'W4', '饕餮？'],
+	['缎带发饰', '3', '防具', '弓', '3', '3', '5', '', 'W4H', '桃巫'],
+	['生之稻谷', '2', '武器', '盾', '1', '', '', '5', 'W5/御守商店', '栉名稻姬'],
+	['稻神结', '3', '防具', '盾', '', '5', '4', '', 'W5', '栉名稻姬'],
+	['水掩腰环', '3', '防具', '剑', '', '2', '8', '', 'W6', '伐萝娜'],
+	['洪绳戟', '3', '武器', '剑', '4', '', '', '4', 'W6H', '伐萝娜'],
+	
+	['蒙面口罩', '1', '防具', '盾', '', '', '5', '', '15-05-05送', '忍者柳生？'],
+	['手里剑', '1', '武器', '盾', '1', '', '', '2', '剧情模式', '忍者柳生？'],
+	['速符咒', '1', '武器', '弓', '1', '', '', '2', '剧情模式', '申公喵？'],
+	
+	['时令花冠', '4', '防具', '盾', '3', '4', '4', '2', '15-04签到', '百花'],
+	['镇田御守', '5', '防具', '盾', '2', '6', '', '6', '限时图白瓜', '？'],     
 ];
+
+function ac(line){
+	return true;
+}
 
 function show(id, data){
 	var table = document.createElement('table');
@@ -59,23 +86,125 @@ function show(id, data){
 		};
 	}
 	
+	
+	function decline(line){
+		return false;
+	}
+	var cond0 = [
+		[
+			function(line){return line[2]=='武器';},
+			function(line){return line[2]=='防具';}, 
+		],  
+		[
+			function(line){return line[3]=='弓';},
+			function(line){return line[3]=='盾';},
+			function(line){return line[3]=='剑';},
+		], 
+	];
+	
+	var cond1 = [
+		[true, true], 
+		[true, true, true], 
+	];
+	
+	function check_line(line){
+		for(var i in cond0){
+			var flag = false;
+			for(var j in cond0[i]){
+				if(cond0[i][j](line) && cond1[i][j]){
+					console.log(''+i+''+j);
+					flag = true;
+				}
+			}
+			if(flag = false){
+				return false;
+			}
+		} 
+		return true;
+	}
+	
+	function show_rows(){
+		for(var row=0; row<table.rows.length; row++){
+			for(var col=0; col<table.rows[row].cells.length; col++){
+				if(check_line(data[row])){
+					table.rows[row].cells[col].style.display='';
+				}
+				else{
+					table.rows[row].cells[col].style.display='none';
+				}
+			}
+		}
+	}
+	
+	
+	function NewCheckClickRow(check, i, j){
+		var func = new Object();
+		func.func = function(){
+			if(check.checked){
+				cond1[i][j] = true;
+			}
+			else{
+				cond1[i][j] = false;
+			}
+			show_rows();
+		};
+		return func; 
+	}
+	
+	function show_by_col(){
+		function create_element(text, click_func){
+			var label = document.createElement('label');
+			var check = document.createElement('input');
+			check.setAttribute('type', 'checkbox');
+			check.setAttribute('checked', 'check');
+			
+			var text_node = document.createTextNode(text);
+			
+			label.appendChild(check);
+			label.appendChild(text_node);
+			table_head.appendChild(label);
+			
+			label.onclick = click_func.func;
+		}
+		
+		create_element('武器', NewCheckClickRow(0, 0) );
+		create_element('盾牌', NewCheckClickRow(0, 1) );
+		
+		create_element('弓', NewCheckClickRow(1, 0) );
+		create_element('盾', NewCheckClickRow(1, 1) );
+		create_element('剑', NewCheckClickRow(1, 2) );
+
+	}
+	
 	for(var i in data[0]){
+		var label = document.createElement('label');
+		
 		var check = document.createElement('input');
 		check.setAttribute('type', 'checkbox');
 		check.setAttribute('checked', 'check');
-		var click_func = new CheckClick(check, i); 
-		check.onclick = click_func.func;
 		
 		var text = document.createTextNode(data[0][i]);
-		table_head.appendChild(check);
-		table_head.appendChild(text);
+		
+		label.appendChild(check);
+		label.appendChild(text);
+		table_head.appendChild(label);
+		
+		var click_func = new CheckClick(check, i); 
+		label.onclick = click_func.func;
 	}
 }
 
 window.onload = function(){
-	show('data', data);
+	show('data', data, ac);
 };
 </script>
+
+<style>
+	table, tr, td {
+		border: 1px solid #999;
+	}
+</style>
+
 </head>
 
 <body>

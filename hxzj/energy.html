@@ -8,9 +8,10 @@
         var s = 0
         var attack = 1
         var defend = 0
-        var self = 0
-        var group = 0
-        var aid = 0
+        var self = 0;
+        var row = 0;
+        var col = 0;
+        var aid = 0;
         var order = $("input:radio[name='order']:checked").val();
         var position = $("input:radio[name='position']:checked").val();
         if (position=='front') {
@@ -21,8 +22,11 @@
         
         s = attack+defend+self;
         
-        if ($("#row").prop('checked') || $("#col").prop('checked')) {
-            group = 1;
+        if ($("#row").prop('checked')) {
+            row = 1;
+        }
+        if ($("#col").prop('checked')) {
+            col = 1;
         }
         
         var aid_val = $("input:radio[name='aid']:checked").val();
@@ -37,18 +41,18 @@
             aid = 2;
         }
         
-        s = attack + defend + self + group + aid
+        var skill = self + row + col + aid;        
+        s = attack + defend + skill;
         
         function geti(){
             var text='';
             for(var i=1; i<=12; i++){
-                var n = (i-1)*s+self+group+aid;
+                var n = (i-1)*s+skill;
                 if(order=='defence'){
                     n += defend;
                 }
                 text += i + ',' + n + '\n';
                 if(n>=10){
-                    //alert(text)
                     return i;
                 }
             }
@@ -59,7 +63,7 @@
         text += '单回合共回能：' + s + '<BR>'
         text += '攻击回能：1' + '<BR>'
         text += '被攻击回能：' + defend + '<BR>'
-        text += '技能回能：' + (self+group+aid)
+        text += '技能回能：' + (skill);
         $("#result").html(text)
     }
 	
@@ -136,7 +140,7 @@
 3. 横扫或贯通回能<BR>
 在行动之前，进行结算。<BR>
 有多个横扫及贯通回能效果时，不叠加。<BR>
-同时有横扫及贯通回能效果时，不叠加。
+同时有横扫及贯通回能效果时，叠加。
 </p>
 
 <p>
